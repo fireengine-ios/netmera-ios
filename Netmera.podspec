@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
   s.subspec 'NetmeraWithoutAdId' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.vendored_frameworks = 'Frameworks/Netmera/Netmera.xcframework'
-    ss.dependency 'AFNetworking/NSURLSession'
+    ss.dependency 'AFNetworking/NSURLSession', '~>4.0.1'
     ss.dependency 'NetmeraCore'
     ss.dependency 'MMWormhole', '~> 2.0.0'
     ss.dependency 'FMDB'
